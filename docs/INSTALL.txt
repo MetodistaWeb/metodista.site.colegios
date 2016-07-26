@@ -1,0 +1,22 @@
+Instalação
+----------
+
+Para habilitar esse produto em um instalação baseada em buildout:
+
+1. Edite seu buildout.cfg e adiciona ``metodista.site.colegios`` na lista
+de eggs a instalar ::
+
+    [buildout]
+    ...
+    eggs =
+        metodista.site.colegios
+
+Após atualizar a configuração você precisa rodar ''bin/buildout'', que irá cuidar de
+atualizar o seu sistema.
+
+Acesse a página de 'Configuração do Site' no seu site Plone e clique no link de 'Complementos'.
+
+Seleciona a caixa próxima de ''metodista.site.colegios'' e clique no botão 'Ativar'.
+
+Nota: Pode ser necessário limpar o cache no navegador e salvar seus registros para
+visualizar os efeitos da instalação do produto.

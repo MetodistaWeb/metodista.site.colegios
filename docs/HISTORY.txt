@@ -1,0 +1,15 @@
+Changelog
+---------
+
+20151214.02.dev0 (unreleased)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* Nada alterado. [dbarbato]
+
+20151214.01 (14.12.2015)
+^^^^^^^^^^^^^^^^^^^^^^^^
+* Atualiza de imagens dos conteúdos estáticos. [dbarbato]
+
+20150909.01 (09.09.2015)
+^^^^^^^^^^^^^^^^^^^^^^^^
+* Adciona diretório de conteúdos estáticos. [dbarbato]
+* Criação do pacote. [dbarbato]
