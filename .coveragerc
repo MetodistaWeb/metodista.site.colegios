@@ -1,0 +1,13 @@
+[report]
+omit =
+    /home/*/.buildout/eggs/*
+    /usr/*
+    bin/test
+    buildout-cache/eggs/*
+    eggs/*
+    parts/*
+    /home/travis/virtualenv/*
+    src/metodista.site.educacaosuperior/*
+    src/metodista/site/educacaosuperior*
+    src/metodista.site.portlets/*
+    src/metodista/site/portlets*
