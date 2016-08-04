@@ -5,17 +5,12 @@ from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
 
-from plone.testing.z2 import installProduct
-
 
 class Fixture(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
-        import Products.PloneFormGen
-        self.loadZCML(package=Products.PloneFormGen)
-        installProduct(app, 'Products.PloneFormGen')
         # Load ZCML
         import metodista.site.colegios
         self.loadZCML(package=metodista.site.colegios)

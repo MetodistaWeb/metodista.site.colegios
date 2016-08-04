@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import unittest2 as unittest
+import unittest
 
 from metodista.site.colegios.testing import INTEGRATION_TESTING
 
@@ -21,11 +21,6 @@ class SiteSettingsTestCase(unittest.TestCase):
                         'E-mail address not set')
         self.assertTrue(self.portal.email_from_name,
                         'E-mail name not set')
-
-    def test_localTimeFormat(self):
-        site_properties = self.portal['portal_properties'].site_properties
-        self.assertEqual(site_properties.localTimeFormat, '%d/%m/%Y',
-                         'Time format not set')
 
     def test_language_settings(self):
         languages = self.portal['portal_languages']

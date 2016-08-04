@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
-import unittest2 as unittest
+
+import unittest
 
 from zope.site.hooks import setSite
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import TEST_USER_NAME
 from plone.app.testing import login
 from plone.app.testing import setRoles
-from metodista.site.colegios.config import PRODUCTS
 from metodista.site.colegios.config import PROJECTNAME
-from metodista.site.colegios.quickinstaller import get_package_name
 from metodista.site.colegios.testing import INTEGRATION_TESTING
 
 
@@ -37,12 +36,6 @@ class TestInstall(BaseTestCase):
     def test_installed(self):
         self.assertTrue(self.qi.isProductInstalled(PROJECTNAME),
                         '%s not installed' % PROJECTNAME)
-
-    def test_base_dependencies_installed(self):
-        for p in PRODUCTS:
-            name = get_package_name(p['package'])
-            self.assertTrue(self.qi.isProductInstalled(name),
-                            '%s not installed' % name)
 
 
 class TestUninstall(BaseTestCase):
