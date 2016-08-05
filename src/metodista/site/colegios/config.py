@@ -41,13 +41,3 @@ class HiddenProducts(grok.GlobalUtility):
         products = []
         products = [p for p in DEPS]
         return products
-
-
-class HiddenProfiles(grok.GlobalUtility):
-
-    grok.implements(st_interfaces.INonInstallable)
-    grok.provides(st_interfaces.INonInstallable)
-    grok.name(PROJECTNAME)
-
-    def getNonInstallableProfiles(self):
-        return HIDDEN_PROFILES
