@@ -1,7 +1,6 @@
 # -*- coding:utf-8 -*-
 from five import grok
 from Products.CMFQuickInstallerTool import interfaces as qi_interfaces
-from Products.CMFPlone import interfaces as st_interfaces
 
 PROJECTNAME = 'metodista.site.colegios'
 
